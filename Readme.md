@@ -16,31 +16,30 @@ The tests cover both **positive (happy path)** and **negative login scenarios**,
 
 ---
 
-## Project Structure
 nucleus-one
 │
 ├── pages
-│ └── login.page.js # Page Object for Login page
+│   └── login.page.js        # Page Object for Login page
 │
 ├── tests
-│ └── login.spec.js # Playwright test cases (optional, parallel to Cucumber)
+│   └── login.spec.js        # Playwright test cases (optional, parallel to Cucumber)
 │
 ├── features
-│ └── login.feature # Cucumber feature file with scenarios
+│   └── login.feature        # Cucumber feature file with scenarios
 │
 ├── step-definitions
-│ └── login.steps.js # Step definitions for feature file
+│   └── login.steps.js       # Step definitions for feature file
 │
 ├── support
-│ └── hooks.js # Cucumber hooks to launch/close browser
+│   └── hooks.js             # Cucumber hooks to launch/close browser
 │
 ├── test-data
-│ └── users.json # Test credentials for positive/negative scenarios
+│   └── users.json           # Test credentials for positive/negative scenarios
 │
-├── playwright.config.js # Playwright configuration
-├── cucumber.js # Cucumber configuration
-├── package.json # Project dependencies
-└── README.md # Project documentation
+├── playwright.config.js     # Playwright configuration
+├── cucumber.js              # Cucumber configuration
+├── package.json             # Project dependencies
+└── README.md                # Project documentation
 
 ---
 
