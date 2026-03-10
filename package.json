@@ -1,0 +1,12 @@
+{
+  "name": "nucleus-one-playwright",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx playwright test",
+    "cucumber": "cucumber-js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.7.0",
+    "@playwright/test": "^1.58.2"
+  }
+}
