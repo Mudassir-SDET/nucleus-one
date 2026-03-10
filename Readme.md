@@ -15,32 +15,26 @@ The tests cover both **positive (happy path)** and **negative login scenarios**,
 * **JavaScript / Node.js** – scripting and test execution  
 
 ---
+## Project Structure
 
+```text
 nucleus-one
-│
 ├── pages
-│   └── login.page.js        # Page Object for Login page
-│
+│   └── login.page.js       # Page Object for Login page
 ├── tests
-│   └── login.spec.js        # Playwright test cases (optional, parallel to Cucumber)
-│
+│   └── login.spec.js       # Playwright test cases (optional, parallel to Cucumber)
 ├── features
-│   └── login.feature        # Cucumber feature file with scenarios
-│
+│   └── login.feature       # Cucumber feature file with scenarios
 ├── step-definitions
-│   └── login.steps.js       # Step definitions for feature file
-│
+│   └── login.steps.js      # Step definitions for feature file
 ├── support
-│   └── hooks.js             # Cucumber hooks to launch/close browser
-│
+│   └── hooks.js            # Cucumber hooks to launch/close browser
 ├── test-data
-│   └── users.json           # Test credentials for positive/negative scenarios
-│
-├── playwright.config.js     # Playwright configuration
-├── cucumber.js              # Cucumber configuration
-├── package.json             # Project dependencies
-└── README.md                # Project documentation
-
+│   └── users.json          # Test credentials for positive/negative scenarios
+├── playwright.config.js    # Playwright configuration
+├── cucumber.js             # Cucumber configuration
+├── package.json            # Project dependencies
+└── README.md               # Project documentation
 ---
 
 ## Test Scenarios Covered
@@ -56,12 +50,6 @@ nucleus-one
 2. Login with **invalid password**  
 
 Both should display the error message:
-
----
-
-
----
-
 
 ---
 
@@ -81,7 +69,7 @@ npx cucumber-js --require support/**/*.js --require step-definitions/**/*.js
 ``` 
 ## Notes
 
-Hooks are now used to manage browser instances per scenario — no world.js is required.
+Hooks are now used to manage browser instances per scenario 
 
 Each scenario runs in its own isolated browser session, preventing conflicts.
 
@@ -89,4 +77,3 @@ Step definitions use this.page from hooks to interact with Playwright page objec
 
 ## Author
 Mudassir Moavia
-SQA Engineer
