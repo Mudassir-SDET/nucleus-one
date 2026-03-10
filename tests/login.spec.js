@@ -4,7 +4,7 @@ const users = require('../test-data/users.json');
 
 test.describe('Nucleus One Login Tests', () => {
 
-  test('Positive Login - Happy Path', async ({ page }) => {
+  test('Verify Successful Login', async ({ page }) => {
 
     const loginPage = new LoginPage(page);
 
@@ -21,7 +21,7 @@ test.describe('Nucleus One Login Tests', () => {
   });
 
 
-  test('Negative Login - Wrong Email', async ({ page }) => {
+  test('Verify Login Fails with Invalid Email', async ({ page }) => {
 
     const loginPage = new LoginPage(page);
 
@@ -36,7 +36,7 @@ test.describe('Nucleus One Login Tests', () => {
   });
 
 
-  test('Negative Login - Wrong Password', async ({ page }) => {
+  test('Verify Login Fails with Invalid Password', async ({ page }) => {
 
     const loginPage = new LoginPage(page);
 
